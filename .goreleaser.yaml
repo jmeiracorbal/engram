@@ -5,6 +5,8 @@ project_name: engram
 before:
   hooks:
     - go mod tidy
+    - npm --prefix dashboard ci
+    - npm --prefix dashboard run build
 
 builds:
   - main: ./cmd/engram

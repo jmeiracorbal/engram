@@ -20,3 +20,7 @@ Thumbs.db
 *.swp
 *.swo
 *~
+
+# Embedded dashboard build output (keep directory for go:embed)
+internal/server/dist/*
+!internal/server/dist/.gitkeep

@@ -94,6 +94,8 @@ func (s *Server) routes() {
 
 	// Stats
 	s.mux.HandleFunc("GET /stats", s.handleStats)
+
+	s.serveDashboard()
 }
 
 // ─── Handlers ────────────────────────────────────────────────────────────────
